@@ -50,7 +50,7 @@ SELECT employees.city, employees.country FROM Customers INNER JOIN employees ON 
 
 16. Use a join to get the ship name of all orders that include a discontinued product. (See
 orders, order_details, and products. 1 means discontinued.)
-SELECT orders.ship_name, order_details.order_id, products.discontinued FROM ((orders INNER JOIN order_details ON orders.ship_name = products.discontinued) INNER JOIN products ON orders.ship_name = order_details.order_id) WHERE products.discontinued = '1';
+SELECT * FROM Products WHERE Discontinued = 1;
 
 17. Get first names of all employees who report to no one.
 SELECT first_name FROM employees WHERE reports_to IS NULL;
