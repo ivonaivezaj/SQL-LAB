@@ -21,6 +21,7 @@ SELECT * FROM Customers ORDER BY country, city;
 
 8. Add a new customer to the customers table. You can use whatever values/
 INSERT INTO customers (customer_id, company_name, contact_name, contact_title, address, city, region, postal_code, country,phone,fax) VALUES ('12345576','MRM','Ivona','Cook','30450 Fox Club Ct','Farmington','Michigan','48331', 'USA','2483033737','2483033738');
+
 9. Update all ShipRegion to the value ‘EuroZone’ in the Orders table, where the
 ShipCountry is equal to France.
 UPDATE orders SET ship_region='EuroZone' WHERE ship_country='France';
