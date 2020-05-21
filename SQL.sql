@@ -46,7 +46,7 @@ SELECT * FROM orders RIGHT JOIN Customers  ON orders.customer_id = customers.cus
 
 15. Use a join to get the ship city and ship country of all the orders which are associated
 with an employee who is in London.
-SELECT employees.city, employees.country FROM Customers INNER JOIN employees ON employees.city = 'London';
+SELECT orders.ship_city, employees.city FROM orders INNER JOIN employees ON orders.ship_city = employees.city WHERE employees.city = 'London'; 
 
 16. Use a join to get the ship name of all orders that include a discontinued product. (See
 orders, order_details, and products. 1 means discontinued.)
